@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://YOUR-REAL-BACKEND.vercel.app/api/$1"
+      "destination": "https://bannu-business-website-backend.vercel.app/api/$1"
     },
     {
       "source": "/(.*)",
