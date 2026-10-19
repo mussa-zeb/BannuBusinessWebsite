@@ -1,0 +1,34 @@
+@"
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment / secrets — NEVER COMMIT
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Build output
+dist/
+frontend/dist/
+build/
+
+# Uploads (keep folder, ignore files inside)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
